@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Lugares Cercanos</h3>
+            <ul class="list-group">
+                <ng-container *ngFor="let lugar of lugares">
+                    <li *ngIf="lugar.active" class="list-group-item">{{lugar.nombre}}</li>
+                </ng-container>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h3>Destacados</h3>
+        </div>
+    </div>
+</div>
